@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 255, 179, 0.952);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+}
+
+.contenedorinicio{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:300px 50px auto 50px;
+    grid-template-areas: "header"
+                         "section"
+                         "main"
+                         "footer";
+
+}
+
+nav{
+    width:100%;
+    background-color:rgba(3, 184, 130, 0.952) ;
+    top:0;
+    position:fixed;
+    z-index: 20;
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+}
+
+nav a:hover {
+    color: black;
+}
+
+header{
+    grid-area: header;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header h1{
+    display: flex;
+    align-self: flex-start;
+}
+
+section{
+    grid-area: section;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+main{
+    grid-area:main;
+    height: auto;
+    margin-top: 100px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.logo{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+ul{
+    list-style: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    display: flex;
+    display: inline-block;
+    width: 16%;
+    position:relative;
+}
+
+ul ul{
+    display: none;
+    position:absolute;
+}
+
+ul ul li{
+    display:block;
+    width:100%;
+    padding:1rem;
+    background-color:rgba(3, 184, 130, 0.952);
+    margin:0.3rem;
+    border-radius: 10px;
+}
+
+ul li:hover ul{
+    display:block;
+    }
+
+.formulario{
+    background-color: white;
+    color:black;
+    border:solid;
+    width: 700px;
+    height: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color:black;
+    margin-bottom: 100px;
+
+
+}
+
+.ellas{
+    background-color: rgba(255, 0, 221, 0.952);
+    font-size: 28px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 60px auto 60px;
+    grid-template-areas: "nav"
+                         "section"
+                         "main"
+                         "footer";
+}
+
+.cajaellas {
+    background-color: rgba(105, 1, 91, 0.952);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border: solid;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.cajaellas a{
+    text-decoration: none;
+    color:white;
+    font-size: 40px;
+}   
+
+.cajaellas img{
+    width: 375px;
+    margin: 7px;
+    border-radius: 10px;
+}
+
+.TarjetaInicio{
+    align-self: flex-start;
+
+}
+
+.TarjetaEllas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TarjetaEllos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TarjetaEllas img{
+    width: 500px;
+    border-radius: 10px;
+    border:solid;
+    border-color:rgba(3, 184, 130, 0.952);    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TarjetaEllos img{
+    width: 520px;
+    border-radius: 10px;
+    border:solid;
+    border-color:rgba(3, 184, 130, 0.952);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.OpcionEllas{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border: solid;
+    background-color: rgba(105, 1, 91, 0.952);
+    margin:10px;
+    border-radius: 10px;
+    display:flex;
+}
+
+.OpcionEllas a{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.OpcionEllas img{
+    width:375px;
+    margin: 7px;
+    margin-top:20px;
+    border-radius: 10px;
+}
+
+.ellos{
+    background-color: rgba(0, 174, 255, 0.952);
+    font-size: 28px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 60px auto 60px;
+    grid-template-areas: "nav"
+                         "section"
+                         "main"
+                         "footer";
+}
+
+.cajaellos {
+    background-color: rgba(2, 93, 136, 0.952);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border: solid;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.cajaellos a{
+    text-decoration: none;
+    color:white;
+    font-size: 40px;
+}   
+
+.cajaellos img{
+    width: 375px;
+    margin: 7px;
+    border-radius: 10px;
+}
+
+
+
+.OpcionEllos{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border: solid;
+    background-color: rgba(2, 93, 136, 0.952);
+    margin:10px;
+    border-radius: 10px;
+    display:flex;
+    
+}
+
+.OpcionEllos a{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.OpcionEllos img{
+    width:375px;
+    margin: 7px;
+    margin-top:20px;
+    border-radius: 10px;
+}
+
+footer{
+    grid-area: footer;
+    background-color:white ;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+footer p{
+    color:black;
+    font-size: 28px;
+    text-align: center;
+}
+
+@media (max-width:480px) {
+    nav{
+        width:100%;
+        background-color:white ;
+        top:0;
+        position:fixed;
+        z-index: 20;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color:black;
+    }
+    
+    nav a:hover {
+        color: red;
+    } 
+    nav ul{
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    nav li{
+        width: 100%;
+    }
+    
+    nav ul ul{
+        display: none;
+        position:absolute;
+    }
+    
+    nav ul ul li{
+        display:block;
+        width:200px;
+        padding:1rem;
+        background-color:white;
+        margin:0.3rem;
+        border-radius: 10px;
+    }
+    
+    ul li:hover ul{
+        display:block;
+    }
+
+    section{
+        margin-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+    .secinicio{
+        margin-top: -20px;
+    }
+
+    .servicios{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 200px;
+    }
+    
+    .iniciogrupo{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 200px;
+    }
+
+    .inicio{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 150px;
+        margin-bottom: 200px;
+    }
+
+    .encabezado{
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .encabezado img{
+        width: 400px;
+    }
+    .TarjetaEllas img{
+        width: 400px;
+    }
+    .TarjetaEllos img{
+        width: 400px;
+    }
+}
