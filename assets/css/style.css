@@ -13,7 +13,7 @@ body{
 .contenedorinicio{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:300px 50px auto 50px;
+    grid-template-rows:300px auto auto 50px;
     grid-template-areas: "header"
                          "section"
                          "main"
@@ -71,7 +71,7 @@ section{
 main{
     grid-area:main;
     height: auto;
-    margin-top: 100px;
+    padding:2rem 0;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -137,7 +137,7 @@ ul li:hover ul{
     font-size: 28px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40px 60px auto 60px;
+    grid-template-rows: repeat (4,auto);
     grid-template-areas: "nav"
                          "section"
                          "main"
@@ -239,7 +239,7 @@ ul li:hover ul{
     font-size: 28px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40px 60px auto 60px;
+    grid-template-rows:  repeat (4,auto);
     grid-template-areas: "nav"
                          "section"
                          "main"
@@ -341,7 +341,9 @@ footer p{
     nav li{
         width: 100%;
     }
-    
+    .contenedorinicio{
+        grid-template-columns: repeat(4,auto);
+    }
     nav ul ul{
         display: none;
         position:absolute;
@@ -367,41 +369,54 @@ footer p{
      }
 
     .secinicio{
-        margin-top: -20px;
+        margin-top: 0px;
+        padding:1rem;
     }
 
     .servicios{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 200px;
     }
     
     .iniciogrupo{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 200px;
     }
 
     .inicio{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 150px;
-        margin-bottom: 200px;
     }
 
     .encabezado{
-        height: 200px;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
     }
     .encabezado img{
-        width: 400px;
+        width: 100%;
     }
     .TarjetaEllas img{
-        width: 400px;
+        width: 100%;
     }
     .TarjetaEllos img{
-        width: 400px;
+        width: 100%;
+    }
+    .cajaellas{
+        width: 100%;
+        height:auto;
+        margin:1rem 0;
+    }
+    .cajaellas img{
+        width: 100%;
+        margin:0;
+    }
+    .cajaellos{
+        width: 100%;
+        height:auto;
+        margin:1rem 0;
+    }
+    .cajaellos img{
+        width: 100%;
+        margin:0;
     }
 }
