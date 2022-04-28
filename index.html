@@ -11,27 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body class="contenedorinicio">
-    <header class="encabezado">
-        <h1>Bienvenidos a:</h1>
-        <img src="./assets/img/portada.png" alt="portada">
-    </header>
-    <section class="secinicio">
-        <h2>Por favor indicanos como te podemos ayudar:</h2>
-        
-    </section> 
-    <main class="inicio">                
-        <div class="TarjetaEllas">
-            <a href="./views/ellas.html"><img src="assets/img/ellas.png" alt="Ellas" ></a>
-        </div>
-        <div class="TarjetaEllos">
-            <a href="./views/ellos.html"><img src="assets/img/ellos.png" alt="Ellos" ></a>
-        </div>
-    </main>
-    <footer>
-        <p> Todos los derechos reservados-2022</p>
-        <img src="./assets/img/pie.png" alt="pie">
-    </footer>
+<body class="container-fluid">
+    <div class="contenedorinicio">
+        <header class="encabezado">
+            <h1>Bienvenidos a:</h1>
+            <img src="./assets/img/portada.png" alt="portada">
+        </header>
+        <section class="secinicio">
+            <h2>Por favor indicanos como te podemos ayudar:</h2>
+            
+        </section> 
+        <main class="inicio"> 
+            <div class="row justify-content-around">                
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                    <a href="./views/ellas.html"><img src="assets/img/ellas.png" alt="Ellas" width="400px" ></a>
+                </div>
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                    <a href="./views/ellos.html"><img src="assets/img/ellos.png" alt="Ellos" width="400px" ></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p> Todos los derechos reservados-2022</p>
+            <img src="./assets/img/pie.png" alt="pie">
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </body>
 </html>
