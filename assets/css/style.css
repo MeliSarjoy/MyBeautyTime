@@ -10,10 +10,18 @@
     font-size: 28px;
 }
 
+.row{
+    margin:0;
+}
+
+.inicio img{
+    width:100%
+}
+
 .contenedorinicio{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:300px auto auto 50px;
+    grid-template-rows:300px auto auto auto;
     grid-template-areas: "header"
                          "section"
                          "main"
@@ -62,6 +70,7 @@ header h1{
 
 section{
     grid-area: section;
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -76,6 +85,10 @@ main{
     justify-content: space-around;
     align-content: space-around;
 
+}
+
+.inicio{
+    display: block;
 }
 
 .logo{
@@ -138,7 +151,7 @@ ul li:hover ul{
     font-size: 28px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat (4,auto);
+    grid-template-rows: repeat(4,auto);
     grid-template-areas: "nav"
                          "section"
                          "main"
@@ -215,7 +228,6 @@ ul li:hover ul{
     width: 400px;
     height: 300px;
     text-align: center;
-    border: solid;
     background-color: rgba(153, 7, 134, 0.685);
     margin:10px;
     border-radius: 10px;
@@ -239,7 +251,7 @@ ul li:hover ul{
     font-size: 28px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:  repeat (4,auto);
+    grid-template-rows:  repeat(4,auto);
     grid-template-areas: "nav"
                          "section"
                          "main"
@@ -274,7 +286,6 @@ ul li:hover ul{
     width: 400px;
     height: 300px;
     text-align: center;
-    border: solid;
     background-color: rgba(2, 93, 136, 0.952);
     margin:10px;
     border-radius: 10px;
@@ -312,26 +323,18 @@ footer p{
 }
 
 @media (max-width:480px) {
-    nav{
-        width:100%;
-        background-color:white ;
-        top:0;
-        position:fixed;
-        z-index: 20;
+    .navbar {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        flex-direction: column-reverse;
+        background-color: white;
     }
-    
-    nav a{
-        text-decoration: none;
-        color:black;
-    }
-    
-    nav a:hover {
-        color: red;
-    } 
+   
     nav ul{
         display: flex;
         flex-direction: row;
@@ -341,9 +344,7 @@ footer p{
     nav li{
         width: 100%;
     }
-    .contenedorinicio{
-        grid-template-columns: repeat(4,auto);
-    }
+    
     nav ul ul{
         display: none;
         position:absolute;
@@ -363,9 +364,7 @@ footer p{
     }
 
     section{
-        margin-top: 90px;
-        display: flex;
-        flex-wrap: wrap;
+        margin-top: 100px;
      }
 
     .secinicio{
@@ -379,11 +378,6 @@ footer p{
     }
     
     .iniciogrupo{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .inicio{
         display: flex;
         flex-wrap: wrap;
     }
@@ -406,16 +400,40 @@ footer p{
         height:auto;
         margin:1rem 0;
     }
-    .cajaellas img{
-        width: 100%;
-        margin:0;
-    }
     .cajaellos{
         width: 100%;
         height:auto;
         margin:1rem 0;
     }
+    .OpcionEllas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height:auto;
+        margin:1rem 0;
+    }
+    .OpcionEllos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height:auto;
+        margin:1rem 0;
+    }
+    .cajaellas img{
+        width: 100%;
+        margin:0;
+    }
     .cajaellos img{
+        width: 100%;
+        margin:0;
+    }
+    .OpcionEllas img{
+        width: 100%;
+        margin:0;
+    }
+    .OpcionEllos img{
         width: 100%;
         margin:0;
     }
