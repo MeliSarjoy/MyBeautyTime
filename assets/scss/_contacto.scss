@@ -1,0 +1,14 @@
+.contacto{
+    font-size: 30px;
+    background-color:rgb(56, 95, 41);
+    padding:10px;
+    margin:30px;
+    border-radius: 10px;
+    button{
+        background-color: aquamarine;
+        margin-top: 10px;
+        &:hover{
+            background-color: rgb(4, 255, 171);
+        }
+    }
+}

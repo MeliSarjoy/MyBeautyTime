@@ -1,440 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5ab803), to(#274e02));
+  background-image: linear-gradient(to bottom, #5ab803, #274e02);
+  font-family: 'Quicksand', sans-serif;
 }
 
-.body{
-    background-color: rgba(0, 255, 179, 0.952);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 28px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.row{
-    margin:0;
+main img {
+  width: 400px;
+  border-radius: 10px;
 }
 
-.inicio img{
-    width:100%
+header {
+  background-color: white;
 }
 
-.contenedorinicio{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:300px auto auto auto;
-    grid-template-areas: "header"
-                         "section"
-                         "main"
-                         "footer";
-
+header h1 {
+  font-size: 40px;
 }
 
-nav{
-    width:100%;
-    top:0;
-    position:fixed;
-    z-index: 20;
-    grid-area: nav;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+header img {
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-nav a{
-    text-decoration: none;
-    color:white;
+footer {
+  padding: 1px;
+  color: white;
+  margin-top: 400px;
+  text-align: center;
 }
 
-nav a:hover {
-    color: red;
+.row {
+  margin: 0;
 }
 
-header{
-    grid-area: header;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+section h2 {
+  color: white;
+  text-align: center;
 }
 
-header h1{
-    display: flex;
-    align-self: flex-start;
+.contacto {
+  font-size: 30px;
+  background-color: #385f29;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 10px;
 }
 
-section{
-    grid-area: section;
-    margin-top: 70px;
-    display: flex;
-    flex-wrap: wrap;
+.contacto button {
+  background-color: aquamarine;
+  margin-top: 10px;
 }
 
-main{
-    grid-area:main;
-    height: auto;
-    padding:2rem 0;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
-
+.contacto button:hover {
+  background-color: #04ffab;
 }
-
-.inicio{
-    display: block;
-}
-
-.logo{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.servicios{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 28px;
-}
-
-ul{
-    list-style: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-li{
-    display: flex;
-    display: inline-block;
-    width: 16%;
-    position:relative;
-}
-
-ul ul{
-    display: none;
-    position:absolute;
-}
-
-ul ul li{
-    display:block;
-    width:100%;
-    padding:1rem;
-    margin:0.3rem;
-    border-radius: 10px;
-}
-
-ul li:hover ul{
-    display:block;
-    }
-
-.formulario{
-    background-color: white;
-    color:black;
-    border:solid;
-    width: 700px;
-    height: 400px;
-    padding: 5px;
-    border-radius: 10px;
-    border-color:black;
-    margin-bottom: 100px;
-
-
-}
-
-.ellas{
-    font-size: 28px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4,auto);
-    grid-template-areas: "nav"
-                         "section"
-                         "main"
-                         "footer";
-}
-
-.cajaellas {
-    background-color: rgba(153, 7, 134, 0.685);
-    width: 400px;
-    height: 300px;
-    text-align: center;
-    border: solid;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.cajaellas a{
-    text-decoration: none;
-    color:white;
-    font-size: 40px;
-}   
-
-.cajaellas img{
-    width: 375px;
-    margin: 7px;
-    border-radius: 10px;
-}
-
-.TarjetaInicio{
-    align-self: flex-start;
-
-}
-
-.TarjetaEllas{
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 6px 6px rgba(0, 0, 0, 0.3);
-}
-
-.TarjetaEllas:hover{
-    transform: translate(10px,10px);
-}
-
-.TarjetaEllos{
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 6px 6px rgba(0, 0, 0, 0.3);
-
-}
-
-.TarjetaEllos:hover{
-    transform: translate(10px,10px);
-}
-
-.TarjetaEllas img{
-    width: 500px;
-    border-radius: 10px;
-    border:solid;
-    border-color:rgba(3, 184, 130, 0.952);    
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.TarjetaEllos img{
-    width: 520px;
-    border-radius: 10px;
-    border:solid;
-    border-color:rgba(3, 184, 130, 0.952);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.OpcionEllas{
-    width: 400px;
-    height: 300px;
-    text-align: center;
-    background-color: rgba(153, 7, 134, 0.685);
-    margin:10px;
-    border-radius: 10px;
-    display:flex;
-    color:white;
-}
-
-.OpcionEllas a{
-    font-size: 40px;
-    text-align: center;
-}
-
-.OpcionEllas img{
-    width:375px;
-    margin: 7px;
-    margin-top:20px;
-    border-radius: 10px;
-}
-
-.ellos{
-    font-size: 28px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:  repeat(4,auto);
-    grid-template-areas: "nav"
-                         "section"
-                         "main"
-                         "footer";
-}
-
-.cajaellos {
-    background-color: rgba(2, 93, 136, 0.952);
-    width: 400px;
-    height: 300px;
-    text-align: center;
-    border: solid;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.cajaellos a{
-    text-decoration: none;
-    color:white;
-    font-size: 40px;
-}   
-
-.cajaellos img{
-    width: 375px;
-    margin: 7px;
-    border-radius: 10px;
-}
-
-
-
-.OpcionEllos{
-    width: 400px;
-    height: 300px;
-    text-align: center;
-    background-color: rgba(2, 93, 136, 0.952);
-    margin:10px;
-    border-radius: 10px;
-    display:flex;
-    color:white;
-    
-}
-
-.OpcionEllos a{
-    font-size: 40px;
-    text-align: center;
-}
-
-.OpcionEllos img{
-    width:375px;
-    margin: 7px;
-    margin-top:20px;
-    border-radius: 10px;
-}
-
-footer{
-    grid-area: footer;
-    background-color:white ;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: flex-start;
-}
-
-footer p{
-    color:black;
-    font-size: 28px;
-    text-align: center;
-}
-
-@media (max-width:480px) {
-    .navbar {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        flex-direction: column-reverse;
-        background-color: white;
-    }
-   
-    nav ul{
-        display: flex;
-        flex-direction: row;
-
-    }
-    
-    nav li{
-        width: 100%;
-    }
-    
-    nav ul ul{
-        display: none;
-        position:absolute;
-    }
-    
-    nav ul ul li{
-        display:block;
-        width:200px;
-        padding:1rem;
-        background-color:white;
-        margin:0.3rem;
-        border-radius: 10px;
-    }
-    
-    ul li:hover ul{
-        display:block;
-    }
-
-    section{
-        margin-top: 100px;
-     }
-
-    .secinicio{
-        margin-top: 0px;
-        padding:1rem;
-    }
-
-    .servicios{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .iniciogrupo{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .encabezado{
-        display: flex;
-        flex-direction: column;
-    }
-    .encabezado img{
-        width: 100%;
-    }
-    .TarjetaEllas img{
-        width: 100%;
-    }
-    .TarjetaEllos img{
-        width: 100%;
-    }
-    .cajaellas{
-        width: 100%;
-        height:auto;
-        margin:1rem 0;
-    }
-    .cajaellos{
-        width: 100%;
-        height:auto;
-        margin:1rem 0;
-    }
-    .OpcionEllas{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        height:auto;
-        margin:1rem 0;
-    }
-    .OpcionEllos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        height:auto;
-        margin:1rem 0;
-    }
-    .cajaellas img{
-        width: 100%;
-        margin:0;
-    }
-    .cajaellos img{
-        width: 100%;
-        margin:0;
-    }
-    .OpcionEllas img{
-        width: 100%;
-        margin:0;
-    }
-    .OpcionEllos img{
-        width: 100%;
-        margin:0;
-    }
-}
+/*# sourceMappingURL=style.css.map */
